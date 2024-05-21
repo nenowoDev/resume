@@ -1,0 +1,37 @@
+-- Insert data into users table
+INSERT INTO users (userid, name, address, email, phone_number)
+VALUES
+    (1, 'John Doe', '123 Main St, City, Country', 'john@example.com', '+1234567890'),
+    (2, 'Jane Smith', '456 Elm St, Town, Country', 'jane@example.com', '+0987654321');
+
+-- Insert data into user_skills table
+INSERT INTO user_skills (user_id, skill, proficiency_level, experience_years)
+VALUES
+    (1, 'SQL', 'Advanced', 5),
+    (1, 'Python', 'Intermediate', 3),
+    (2, 'Java', 'Advanced', 4),
+    (2, 'HTML/CSS', 'Intermediate', 2);
+
+-- Insert data into work_history table
+INSERT INTO work_history (user_id, company_name, position, start_date, end_date, responsibilities)
+VALUES
+    (1, 'ABC Company', 'Software Engineer', '2018-01-01', '2022-03-31', 'Developed and maintained web applications'),
+    (2, 'XYZ Corporation', 'Java Developer', '2016-05-01', '2020-12-31', 'Worked on backend systems and APIs');
+
+-- Insert data into education table
+INSERT INTO education (user_id, institution, degree, field_of_study, start_date, end_date, gpa, honors)
+VALUES
+    (1, 'University A', 'Bachelor of Science', 'Computer Science', '2014-09-01', '2018-06-30', 3.75, 'Dean''s List'),
+    (2, 'College B', 'Bachelor of Arts', 'Information Technology', '2012-09-01', '2016-06-30', 3.5, NULL);
+
+-- Insert data into certifications table
+INSERT INTO certifications (user_id, certification_name, issuing_organization, issue_date)
+VALUES
+    (1, 'AWS Certified Developer - Associate', 'Amazon Web Services', '2020-05-15'),
+    (2, 'Oracle Certified Java Programmer', 'Oracle', '2018-08-20');
+
+-- Insert data into projects table
+INSERT INTO projects (user_id, project_name, description, start_date, end_date)
+VALUES
+    (1, 'E-commerce Website', 'Developed a fully functional e-commerce website using Django framework', '2019-03-01', '2020-01-31'),
+    (2, 'Inventory Management System', 'Designed and implemented an inventory management system using Java and MySQL', '2017-07-01', '2018-05-31');

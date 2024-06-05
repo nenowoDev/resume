@@ -30,11 +30,9 @@ CREATE TABLE education (
     user_id INT,
     institution VARCHAR(100),
     degree VARCHAR(50),
-    field_of_study VARCHAR(50),
     start_date DATE,
     end_date DATE,
     gpa DECIMAL(3, 2),
-    honors VARCHAR(100),
     FOREIGN KEY (user_id) REFERENCES users(userid)
 );
 
@@ -42,7 +40,6 @@ CREATE TABLE education (
 CREATE TABLE certifications (
     user_id INT,
     certification_name VARCHAR(100),
-    issuing_organization VARCHAR(100),
     issue_date DATE,
     FOREIGN KEY (user_id) REFERENCES users(userid)
 );

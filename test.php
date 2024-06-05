@@ -2,7 +2,7 @@
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
-$database = "resume"; 
+$database = "resume_builder"; 
 
 
 $conn = new mysqli($servername, $username, $password, $database);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT * FROM person"; 
+$sql = "SELECT * FROM users"; 
 
 
 $result = $conn->query($sql);
@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
 
-        echo "ID: " . $row["id"] . " - Name: " . $row["name"] . "<br>";
+        echo "ID: " . $row["userid"] . " - Name: " . $row["name"] . "<br>";
  
     }
 } else {

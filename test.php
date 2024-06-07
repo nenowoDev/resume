@@ -7,6 +7,8 @@ $database = "resume_builder";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
+// $con=new mysqli("localhost","root","","resume_builder")
+
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

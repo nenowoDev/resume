@@ -5,6 +5,7 @@ CREATE TABLE users (
     address VARCHAR(100),
     email VARCHAR(100),
     phone_number VARCHAR(20)
+    
 );
 
 CREATE TABLE user_skills (

@@ -21,7 +21,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     //Change uid to reflect responding userid
-    $uid = 0;
+    $uid = 1;
     // Query to fetch user profile data
     $sql = "SELECT * FROM users WHERE userid = $uid"; // Using uid as userid
 
